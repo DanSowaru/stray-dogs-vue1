@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "GenericMobileSystem";
+    src:
+        local("GenericMobileSystem"),
+        url(../fonts/GenericMobileSystem.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    //  background: ;
+    //  color: ;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-family: "GenericMobileSystem", 'Courier New', Courier, monospace;
+}
+
+button {
+    cursor: pointer;
+}
+
+// ------------------------------------------------------- COLORS --------------------------------
+
+$window-blue: #4D6CBE;
+$window-light-blue: #829adc;
+$title-pink: #FF0187;
+$sun-orange: #FFB441;
+$space-blue: #1a2442;
+
+// ---------------------------------------------------- BREAKPOINTS ------------------------------
+
+$breakMobile: "max-width: 768px";
+$breakDesktop: "min-width: 769px";
+

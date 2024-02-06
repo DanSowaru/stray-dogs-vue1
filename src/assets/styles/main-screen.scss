@@ -1,0 +1,148 @@
+@import "global";
+
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------- HEADER ---------------------
+// ---------------------------------------------------------------------------------------
+
+#window-header {
+  background-color: $window-light-blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#window-header-title {
+  display: inline;
+  margin: 5px;
+  margin-left: 2vw;
+}
+
+#window-header-buttons {
+  display: inline;
+  margin: 0 1vw;
+}
+
+.header-button {
+  max-width: 1.5rem;
+  border: 2px solid;
+  margin: 5px;
+}
+
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------- GAME WINDOW ----------------
+// ---------------------------------------------------------------------------------------
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#overview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 768px;
+  min-height: 100svh;
+}
+
+#game-window {
+  flex-grow: 1;
+  background-color: $space-blue;
+  border-right: 1vw solid $window-blue;
+  border-left: 1vw solid $window-blue;
+}
+
+#window-border {
+  background-color: $window-blue;
+}
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------- FOOTER MENU ----------------
+// ---------------------------------------------------------------------------------------
+
+#game-footer {
+  margin-top: auto;
+  padding: 1vh 0;
+  background-color: $window-blue;
+}
+
+#game-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-button {
+  background-color: $window-light-blue;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 10vw;
+  max-height: 80px;
+  max-width: 200px;
+}
+
+.button-text {
+  
+  margin-left: 8px;
+
+  @media ($breakMobile) {
+    font-size: 5vw;
+  }
+
+  @media ($breakDesktop) {
+    font-size: 2rem;
+  }
+}
+
+.button-icon {
+
+  @media ($breakMobile) {
+    width: 5vw;
+  }
+  @media ($breakDesktop) {
+    width: 2rem;
+  }
+}
+
+// @media (min-width: 768px) {
+//   .button-text {
+//     font-size: 2rem;
+//   }
+
+//   .button-icon {
+//     max-width: 2rem;
+//   }
+// }
+
+// ==================================================================================================
+// ================================================================= CHATBLOCK COMPONENT ============
+// ==================================================================================================
+
+.dog-chat-block {
+  display: flex ;
+  flex-flow: row nowrap;
+  padding: 2vw;
+  background-color: rgb(194, 220, 255);
+  margin: 2px 0;
+}
+
+.chat-block-portrait * {
+  max-width: 64px;
+  border-radius: 100%;
+}
+
+.chat-block-preview {
+  margin-left: 2vw;
+}
+
+.chat-block-dog-name {}
+
+.chat-block-paragraph-preview {}
+
+//------------------------------------------------------------------------------------- TEST AREA
